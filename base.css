@@ -1,0 +1,582 @@
+@charset "utf-8";
+@font-face{
+   font-family: Verdana;
+   }
+
+/* HTML and Body Styles */
+
+html{
+    display: table;
+    margin: auto;
+	height: 100%;
+	background-image: url(images/background.png);
+	background-size: cover;
+	background-position: center;
+	background-size: 200%;
+}
+
+body{
+    vertical-align: middle;
+	width: 1280px;
+	background-color: skyblue;
+	height: 100%;
+}
+
+/* Home Page Styles */
+
+img#banner{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+img#self{
+	display: block;
+	border-radius: 25px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Footer Styles */
+
+footer{
+	width: 100%;
+	clear: both;
+	margin: 0px;
+	padding: 20px;
+}
+
+/* Heading Styles */
+
+h1#main{
+	clear: both;
+	text-align: center;
+	padding: 0px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	font-size: 35;
+}
+
+/* Div Styles (Home) */
+
+div#column1{
+	display: block;
+	float: left;
+	width: 79%;
+}
+
+div#column2{
+	border: solid black;
+	border-radius: 30px;
+	margin-right: 10px;
+	display: block;
+	float: right;
+	width: 19%;
+}
+
+div#aboutMePic{
+	display: block;
+	float: left;
+	width: 30%;
+	height: 250px;
+	margin-left: 25px;
+	border: solid white;
+	border-radius: 30px;
+}
+
+div#aboutMe{
+	font-size: 16;
+	line-height: 1.3em;
+	display: block;
+	float: right;
+	width: 65%;
+	height: 250px;
+	text-align: center;
+	margin-left: 10px;
+	border: solid black;
+	border-radius: 30px;
+	background-color: rgb(105, 160, 200);
+	font-family: sans-serif, serif, cursive;
+}
+
+div#findHere{
+	font-size: 15;
+	margin-top: 10px;
+	line-height: 1.1em;
+	float: left;
+	width: 95%;
+	margin-left: 25px;
+	padding-left: 20px;
+	border-radius: 30px;
+	background-color: rgb(129, 219, 201);
+	font-family: Georgia;
+}
+
+div#support{
+	font-size: 15;
+	margin-top: 10px;
+	line-height: 1.1em;
+	float: left;
+	width: 95%;
+	margin-left: 25px;
+	padding-left: 20px;
+	border-radius: 30px;
+	background-color: rgb(237, 233, 116);
+	font-family: 'Times New Roman';
+}
+
+div#other{
+	font-size: 16;
+	margin-top: 10px;
+	line-height: 1.1em;
+	float: left;
+	width: 95%;
+	margin-left: 25px;
+	padding-left: 20px;
+	border-radius: 30px;
+	background-color: rgb(197, 141, 222);
+	font-family: 'Trebuchet MS';
+}
+
+/* Div Styles (Trips) */
+
+div#location1video{
+	clear: left;
+	margin-top: 20px;
+	margin-left: 25px;
+	width: 500px;
+	float: left;
+	height: 380px;
+	border-bottom: 1px solid black;
+}
+div#location1text{
+	margin-top: 15px;
+	width: 486px;
+	float: right;
+	height: 385px;
+	border-bottom: 1px solid black;
+}
+div#location2video{
+	clear: left;
+	margin-top: 20px;
+	margin-left: 25px;
+	width: 500px;
+	float: left;
+	height: 375px;
+	border-bottom: 1px solid black;
+}
+div#location2text{
+	margin-top: 10px;
+	width: 486px;
+	float: right;
+	height: 385px;
+	border-bottom: 1px solid black;
+}
+div#location3video{
+	clear: left;
+	margin-top: 20px;
+	margin-left: 25px;
+	width: 500px;
+	float: left;
+	height: 375px;
+	border-bottom: 1px solid black;
+}
+div#location3text{
+	margin-top: 10px;
+	width: 486px;
+	float: right;
+	height: 385px;
+	border-bottom: 1px solid black;
+}
+
+/* Div Styles (Highlights) */
+
+div#mainPicture{
+	margin-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+	border: solid black;
+	background-color: black;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div#photoCaption{
+	text-align: center;
+	margin-left: 20px;
+	background-color: black;
+	color: white;
+}
+div#photoCaption caption{
+	clear: both;
+	color: white;
+	float: center;
+	text-align: center;
+}
+div#mainPicture img{
+	max-width: 700px;
+	max-height: 700px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+div#photoReel{
+	width: 945px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	padding: 20px;
+	background-color: black;
+	border: solid black;
+}
+div#photoReel img{
+	padding: 2px;
+	float: center;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+div#space {
+	min-height: 517px;
+}
+
+/* Navigation Bar Styles */	
+
+nav#navigationBar{
+	clear: both;
+}
+
+nav#navigationBar > ul > li{
+	display: block;
+	float: left;
+	text-align: center;
+    width: 16%;
+}
+nav#navigationBar a{
+	display: block;
+	vertical-align: center;
+    background-color: ivory;
+	border: solid black;
+}
+
+nav#navigationBar > ul > li > a:hover, nav#navigationBar > ul > li > a:active{
+	background-color: blue;
+}
+
+
+nav ul > li > a:link, nav ul > li > a:visited, div#findHere a:link, 
+div#findHere a:visited, div#support a:link, div#support:visited, 
+div#other a:link, div#other a:visited  {
+   color: blue;
+   text-decoration: none;
+}
+
+nav ul > li > a:hover, nav ul > li > a:active, div#findHere a:hover, 
+div#findHere a:active, div#support a:hover, div#support a:active, 
+div#other a:hover, div#other a:active {
+   color: rgb(255, 64, 255);
+   text-decoration: underline;
+}
+
+nav#navigationBar > ul > li > a#store:hover{
+	background-color: green;
+}
+
+/* Table Styles (Schedule)*/
+
+#calendar_table {
+   background-color: rgb(200, 200, 200);  
+   font-size: 1.4em; 
+   width: 90%;
+   margin: auto;
+   box-shadow: rgb(100, 100, 150) 0px 0px 5px,
+               rgb(100, 100, 150) 0px 0px 5px,
+				rgb(100, 100, 150) 0px 0px 5px,
+				rgb(100, 100, 150) 0px 0px 5px;			   
+}
+
+#calendar_table caption {
+   caption-side: top; 
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 20px; 
+   font-size: 1.6em; 
+   font-family: 'Brush Script MT';
+}
+
+td#calendar_today{
+	background-color: pink;
+}
+
+img#today{
+	height: 100%;
+	width: 100%;
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 0.75em;
+   border: 1px solid gray;
+   border: collapse;
+   background-color: white;
+   height: 100px;
+   width: 14.28%;
+}
+ 
+/* Aside Styles*/
+
+aside{
+	margin-top: 40px;
+	width: 100%;
+}
+
+aside h1{
+	text-align: center;
+	font-size: 1.2em;
+}
+
+aside nav h2{
+	font-size: 1em;
+	text-align: left;
+	margin-left: 30px;
+	padding: 0px;
+}
+
+aside nav#nav_train ul li, aside nav#nav_plane ul li, aside nav#nav_cruise ul li {
+    list-style-type: none;
+	font-size: .9em;
+	padding-right: 10%;
+}
+
+aside nav#nav_train ul li::before {   
+    content: '';   
+    display: inline-block;   
+    height: 30px;   
+    width: 30px;    
+    background-size: 30px;   
+    background-image: url('images/train_icon.png'); 
+    background-repeat: no-repeat;   
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+aside nav#nav_plane ul li::before {   
+    content: '';   
+    display: inline-block;   
+    height: 30px;   
+    width: 30px;    
+    background-size: 30px;   
+    background-image: url('images/plane_icon.png'); 
+    background-repeat: no-repeat;   
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+aside nav#nav_cruise ul li::before {   
+    content: '';   
+    display: inline-block;   
+    height: 30px;   
+    width: 30px;    
+    background-size: 30px;   
+    background-image: url('images/boat_icon.png'); 
+    background-repeat: no-repeat;   
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*Cart Styles (Merchandise)*/
+
+form#loginForm{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 50px;
+	clear: both;
+	float: right;
+}
+
+table#cartTable tr td img{
+	display: block;
+	clear: both;
+	max-height: 150px;
+	max-width: 150px;
+	margin-left: 20px;
+}
+
+label.itemName{
+	display: block;
+	float: left;
+	margin-left: 50px;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+table#cartTable {
+	margin: 15px;
+	margin-left: 150px;
+	margin-right: 150px;
+	width: 1000px;
+	border-collapse: collapse;
+}
+
+form#cart fieldset {
+	border: none;
+	margin-left: -10px;
+}	
+
+form#cart input[type="text"] {
+	background-color: rgba(240, 233, 222, 0.5);
+}
+
+table#cartTable td {
+    height: 30px;
+    vertical-align: top;
+}
+
+
+form#cart input[type="text"] {
+    color: rgb(101, 101, 101);
+}
+
+form#cart select {
+    display: inline-block;
+    margin-left: 10px;
+    color: rgb(101, 101, 101);
+}
+
+
+table#cartTable tr td:last-of-type input {
+    text-align: right;
+    border: none;
+}
+
+table#cartTable tr:nth-of-type(3) {
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#cartTable tr:nth-of-type(2) td, table#cartTable tr:nth-of-type(4) td {
+	padding-top: 10px;
+}
+
+table#cartTable tr:nth-of-type(4) td {
+	padding-top: 10px;
+	
+}
+
+table#cartTable tr:last-of-type td {
+    padding-top: 15px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#cartTable td.rightA {
+	margin-top: 5px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+form#cart fieldset label {
+    display: block;
+}
+
+form#cart input#buttonAdd {
+    display: block;
+    width: 120px;
+    height: 35px;
+    margin: 15px auto;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+
+/* Payment Styles (Peyment from Merchandise) */
+section#paySection tr{
+	display: block;
+	margin-left: 430px;
+	clear: both;
+	float; left;
+}
+
+form#credit fieldset#cards{
+	border: none;
+	margin-left: -10px;
+	padding: 10px;
+}
+
+form#credit fieldset img{
+	max-width: 50px;
+}
+
+form#credit fieldset{
+	border: none;
+	margin-left: 200px;
+	padding: 10px;
+}
+
+form#credit p#footnote{
+	border: none;
+	margin-left: 200px;
+	padding: 10px;
+}
+
+input#cardHolder:empty{
+   background-color: pink;
+}
+input#cardNumber:empty{
+	background-color: pink;
+}
+input#expDate:empty{
+	background-color: pink;
+}
+input#cvc:empty{
+	background-color: pink;
+}
+
+input#cardHolder:focus-within, input#cardHolder:valid, input#cardNumber:focus-within, input#cardNumber:valid, 
+input#expDate:focus-within, input#expDate:valid, input#cvc:focus-within, input#cvc:valid{
+	background-color: white;
+}
+
+
+#subButton{
+	display: block;
+    width: 220px;
+    height: 35px;
+    margin: auto;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+
+/* ContactUS Styles */
+
+div#column1 > form#contactUsForm > fieldset{
+	border: none;
+}
+
+div#column1 > form#contactUsForm {
+	margin-left: 200px;
+	margin-right: 200px;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: white;
+}
+
+div.formRow{
+	margin-left: 40px;
+	margin-top: 15px;
+}
+
+div#contactButtons{
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+textarea#descriptionBox{
+	height: 100px;
+	width: 500px;
+}

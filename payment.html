@@ -1,0 +1,138 @@
+
+<html>
+
+<head>
+	<title> Mike's Travel Blog </title>
+	<meta charset="utf-8"/>
+	<meta charset="keywords" content="Travel"/>
+	<link href="base.css" type="text/css" rel="stylesheet"/>
+	<script src="payment.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+	<header>
+		<a href="home.html">
+			<img src="images/banner.png" alt="Mike's Travel Blog"/>
+		</a>
+	</header>
+	
+	<nav id="navigationBar">
+		<ul>
+			<li> <a href = "home.html">Home</a></li>
+			<li> <a href = "trips.html">Trips</a></li>
+			<li> <a href = "highlights.html">Highlights</a></li>
+			<li> <a href = "schedule.html">Schedule</a></li>
+			<li> <a href = "merchandise.html">Merchandise</a></li>
+			<li> <a href = "contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	<h1 id="main">Confirm Payment</h1>
+	<section id="paySection">
+
+		<form id="order" name="order">       
+			<table id="orderTable">
+				<tr>
+					<td id="item1row">
+						<input type="text" name="item1Name" id="item1Name" readonly  /> 
+						X
+						<input type="text" name="item1Qty" id="item1Qty"  readonly />                                              
+					</td>       
+				</tr>
+				<tr>
+					<td id="item2row">
+						<input type="text" name="item2Name" id="item2Name" readonly  /> 
+						X
+						<input type="text" name="item2Qty" id="item2Qty"  readonly />                                              
+					</td>   
+				</tr>
+				<tr>
+					<td id="item3row">
+						<input type="text" name="item3Name" id="item3Name" readonly  /> 
+						X
+						<input type="text" name="item3Qty" id="item3Qty"  readonly />                                              
+					</td>   
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="orderCost" id="orderCost" size="10"  readonly />
+					</td>
+				</tr>
+				<tr>
+					<td> Shipping option:   
+						<input type="text" name="shippingType" id="shippingType"  readonly />
+					</td>
+				</tr>
+				<tr>
+					<td> Shipping cost: 
+					<input type="text" name="shippingCost" id="shippingCost" size="10" readonly  />
+					</td>
+				</tr>        
+				<tr>
+					<td class="rightA">Subtotal: </td>
+					<td class="outcell">
+					<input type="text" name="subTotal" id="subTotal" size="10" readonly  />
+					</td>
+				</tr>
+				<tr>
+					<td class="rightA">Tax (8%): </td>
+					<td>
+					<input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+					</td>
+				</tr>
+				<tr>
+					<td class="rightA">TOTAL: </td>
+					<td>
+					<input type="text" name="cartTotal" id="cartTotal" size="10" readonly  />
+					</td>
+				</tr>
+			</table>
+		</form>      
+
+		<form id="credit" name="credit" method="post" action="verified.html">         
+			<fieldset id="creditcard">
+				<legend>Credit Information</legend>
+				<label for="cardHolder">Card Holder*</label>
+				<input name="cardHolder" id="cardHolder" required type="text" />              
+
+				<fieldset id="cards">
+					<label class="cardLabel">Credit Company*</label>
+					<label class="cardLabel">
+						<input name="company" value="amex" type="radio" required />
+						<img src="images/amex.png" alt="American Express" />
+					</label>
+					<label class="cardLabel">               
+						<input name="company" value="discover" type="radio" />
+						<img src="images/discover.png" alt="Discover" />
+					</label>
+					<label class="cardLabel">                  
+						<input name="company" value="master" type="radio"  />
+						<img src="images/master.png" alt="MasterCard" />
+					</label>
+					<label class="cardLabel">                  
+						<input name="company" value="visa" type="radio"  />
+						<img src="images/visa.png" alt="Visa" />
+					</label>
+				</fieldset>          
+
+				<label for="cardNumber">Credit Card Number*</label>
+				<input name="cardNumber" id="cardNumber" required type="text"
+					   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+				<label for="expDate">Expiration Date*</label>
+				<input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+				<label for="cvc">CVC*</label>
+				<input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+			</fieldset>
+
+			<p id="footnote">* - Required</p>        
+			<input type="submit" id="subButton" value="Submit Payment" />         
+		</form>
+
+   </section>
+
+	<footer>
+		Mike's Travel Blog &#8226; P.O. Box# 12345 &#8226; contact@MikesTravelBlog.com
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+<html>
+
+<head>
+	<title> Mike's Travel Blog </title>
+	<meta charset="utf-8"/>
+	<meta charset="keywords" content="Travel"/>
+	<link href="base.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+	<header>
+		<a href="home.html">
+			<img src="images/banner.png" alt="Mike's Travel Blog"/>
+		</a>
+	</header>
+	
+	<nav id="navigationBar">
+		<ul>
+			<li> <a href = "home.html">Home</a></li>
+			<li> <a href = "trips.html">Trips</a></li>
+			<li> <a href = "highlights.html">Highlights</a></li>
+			<li> <a href = "schedule.html">Schedule</a></li>
+			<li> <a href = "merchandise.html" id="store">Merchandise</a></li>
+			<li> <a href = "contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	<article>
+		<h1 id="main">Contact Us</h1>
+	<div id="column1">
+		
+		<form id="contactUsForm" action="submit.html" method="post">
+			<fieldset id="userinfo">
+
+            <div class="formRow">
+				<label for="name"> Name * </label>
+				<input name="name" id="name" type="text" required/>
+            </div>
+            <div class="formRow">
+				<label for="phone"> Phone Number </label>
+				<input name="phone" id="phone" type="tel" pattern="^\d{10}$" />
+            </div>
+            <div class="formRow">
+				<label for="email"> Email *</label>
+				<input name="email" id="email" type="email" required/>
+            </div>
+
+            <div class="formRow">
+				<label for="reason"> Reason for contact <br/> (Select one)</label>
+				<select name="reason" id="reason" size="1">
+					<option value="order"> Edit an order </option>
+					<option value="inquiry" selected> General inquiry/questions </option>
+					<option value="buisiness"> Business inquries </option>
+					<option value="word"> Send feedback </option>
+					<option value="other"> Other </option>
+				</select>
+            </div>
+			
+			<div class="formRow">
+				<label for="descriptionBox" > Description </label>
+				<textarea id="descriptionBox"> </textarea>
+			</div>
+			
+			<div class="formRow">
+				<input type="checkbox" name="mailMe" id="mailCB" value="mailMe" />
+				<label for="mailCB"> Subscribe to email notifications for blog updates </label>
+			</div>
+			
+			<div id="contactButtons"> 
+               <input type="submit" name="submit" id="submit" value="Submit form" />
+               <input type="reset" name="reset" value="Reset fields" />
+            </div>
+			
+			<div class="formRow">
+				* - indicates required fields.
+			</div>
+			
+         </fieldset>
+
+      </form>
+		
+	</div>
+	
+	<div id="column2">
+	<aside>
+		<h1>Recommendations</h1>
+		<nav id="nav_train">
+		<h2>Train travel</h2>
+		<ul>
+			<li><a href="https://new.mta.info">New York (MTA)</a></li>
+			<li><a href="https://www.amtrak.com/home">United States (Amtrak)</a></li>
+			<li><a href="https://www.thetrainline.com/en-us">Europe (TrainLine)</a></li>
+		</ul>
+		</nav>
+		<nav id="nav_plane">
+		<h2>Air travel</h2>
+		<ul>
+			<li><a href="https://www.aa.com/homePage.do">American Airlines</a></li>
+			<li><a href="https://www.united.com/">United Airlines</a></li>
+			<li><a href="https://www.southwest.com/">Southwest Airlines</a></li>
+			<li><a href="https://www.delta.com/">Delta Airlines</a></li>
+		</ul>
+		</nav>
+		<nav id="nav_cruise">
+		<h2>Cruises</h2>
+		<ul>
+			<li><a href="https://www.carnival.com/">Carnival Cruises</a></li>
+			<li><a href="https://www.royalcaribbean.com/">Royal Caribbean</a></li>
+			<li><a href="https://www.ncl.com/">Norwegian Cruise Line</a></li>
+			<li><a href="https://disneycruise.disney.go.com/">Disney Cruise Line</a></li>
+		</ul>
+		</nav>
+    </aside>
+	</div>
+	
+	</article>
+	
+	<footer>
+		Mike's Travel Blog &#8226; P.O. Box# 12345 &#8226; contact@MikesTravelBlog.com
+	</footer>
+	
+</body>
+</html>
+	
